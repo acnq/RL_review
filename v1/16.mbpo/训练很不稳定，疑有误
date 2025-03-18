@@ -1,0 +1,3 @@
+mbpo_pendulum 文件似乎根本不能收敛，
+MBPO 收敛很不稳定
+ipynb的文件难以进行diff 比较，不知道问题何在
