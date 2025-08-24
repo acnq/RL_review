@@ -6,4 +6,6 @@ imitate source code from here https://github.com/lansinuote/Simple_Reinforcement
 
 我的评价是从PPO开始，之前看v1, 之后看v2, v2有更多的文字描述
 
-v3 is from Hands-on RL, instructed from here https://hrl.boyuai.com/chapter/, and imitated the code from here https://github.com/boyu-ai/Hands-on-RL. Note that this code is from a very old version, so be careful for the environment (python 3.8 and gym 0.18.3). If you want to install yourself, suggested to refer tutorial here: https://blog.csdn.net/weixin_45386421/article/details/134892382
+v3 is from Hands-on RL, instructed from here https://hrl.boyuai.com/chapter/, and imitated the code from here https://github.com/boyu-ai/Hands-on-RL. Note that this code is from a very old version, so I changed the code correspondingly to support python 3.12. 
+
+see requirements.txt

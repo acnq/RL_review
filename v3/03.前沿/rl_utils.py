@@ -14,7 +14,15 @@ class ReplayBuffer:
   def sample(self, batch_size): 
     transitions = random.sample(self.buffer, batch_size)
     state, action, reward, next_state, done = zip(*transitions)
-    return np.array(state), action, reward, np.array(next_state), done 
+    # return np.array(state), action, reward, np.array(next_state), done 
+    # 判断单智能体 or 多智能体
+    if isinstance(state[0], (list, tuple)):  
+      # 多智能体，保持 list
+      return list(state), list(action), list(reward), list(next_state), list(done)
+    else:  
+      # 单智能体，可以直接堆叠
+      return np.array(state), np.array(action), np.array(reward), np.array(next_state), np.array(done)
+
 
   def size(self): 
     return len(self.buffer)
